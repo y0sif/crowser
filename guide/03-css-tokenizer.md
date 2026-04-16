@@ -229,7 +229,9 @@ token. The value does not include the `#` itself.
 #main-nav ->  Hash("main-nav")
 ```
 
-Hash values are lowercased, just like identifiers.
+Hash values preserve their original case (they are **not** lowercased). This is
+important because hash tokens are used for hex colors like `#FF0000`, and
+lowercasing would produce incorrect color values.
 
 Both ID selectors and hex colors use the same token type. The CSS parser in
 Phase 4 will determine from context whether a Hash is an ID selector or a

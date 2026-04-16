@@ -20,8 +20,6 @@ pub enum CssToken {
     Comma,
     OpenBrace,
     CloseBrace,
-    OpenParen,
-    CloseParen,
     Star,
 }
 ```
@@ -83,7 +81,7 @@ fn is_ident_char(c: char) -> bool {
 
 This three-way branch is the trickiest part of the CSS tokenizer. Get it right and everything else is straightforward.
 
-**Lowercase everything.** The spec requires identifiers, hash values, and units to be lowercased. Apply `.to_ascii_lowercase()` right after reading, just like in the HTML tokenizer.
+**Lowercase identifiers and units.** The spec requires identifiers and units to be lowercased. Apply `.to_ascii_lowercase()` right after reading, just like in the HTML tokenizer. **Hash values are the exception** -- they preserve original case because they are used for hex colors like `#FF0000`.
 
 **CSS comments.** They start with `/*` and end with `*/`. In your whitespace-skipping loop, check for `/*` and consume everything up to and including `*/`. Do not emit a token. A common pattern is to loop `skip_whitespace` and `skip_comment` together until neither makes progress.
 
@@ -101,4 +99,4 @@ This three-way branch is the trickiest part of the CSS tokenizer. Get it right a
 
 **String edge case.** The spec says unterminated strings cause exit code 1. Check that you hit the matching close quote before end of input.
 
-**OpenParen and CloseParen.** The spec lists these token types even though CSS functions are out of scope. Include them for completeness -- they are simple single-character dispatches. You will need them if you later handle `rgb()`, `calc()`, etc.
+**Parentheses are out of scope.** CSS functions like `rgb()`, `calc()`, and `url()` are not supported in this phase, and parentheses are not tokenized. If you encounter a `(` or `)`, treat it as an unknown character and skip it.

@@ -172,6 +172,12 @@ Pick the approach that fits your goals. A bitmap font gives you visible text wit
 minimal effort. A font library gives you quality. Skipping it lets you move to
 Phase 8 faster.
 
+**A note on test expectations:** The Phase 7 test suite only verifies that a PNG
+file is created with non-zero size. It does not perform pixel-level comparison or
+validate text rendering quality. You should implement something reasonable, but
+do not over-invest in text rendering at this stage -- it will not affect whether
+tests pass or fail.
+
 ## Color Resolution
 
 Your painter needs to convert CSS color values into RGBA bytes. The supported

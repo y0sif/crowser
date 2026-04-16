@@ -110,4 +110,5 @@ The following are **not** handled in this phase:
 ## Exit Codes
 
 - `0` — success, JSON printed to stdout
-- `1` — file not found or read error (print error message to stderr)
+- `1` — parse error (malformed input beyond recovery), error message printed to stderr
+- `2` — file not found, print `Error: file not found: <path>` to stderr

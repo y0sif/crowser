@@ -190,21 +190,22 @@ A JSON array of token objects. Each token has a `"type"` field and type-specific
 | Token type    | Fields  | Example input | Description |
 |---------------|---------|---------------|-------------|
 | `Ident`       | `value` | `color`       | An identifier |
-| `Hash`        | `value` | `#main`       | A hash (ID selector or hex color). Value includes the `#`. |
+| `Hash`        | `value` | `#main`       | A hash (ID selector or hex color). Value does **not** include the `#`. |
 | `Dot`         | --      | `.`           | A period (class selector prefix) |
 | `String`      | `value` | `"hello"`     | A quoted string. Value does **not** include the quotes. |
-| `Number`      | `value` | `42`          | A bare number (no unit). Value is a number, not a string. |
-| `Dimension`   | `value`, `unit` | `10px`  | A number with a unit. `value` is a number, `unit` is a string. |
-| `Percentage`  | `value` | `50%`         | A number followed by `%`. `value` is a number. |
+| `Number`      | `value` | `42`          | A bare number (no unit). Value is a **string** (e.g. `"42"`). |
+| `Dimension`   | `value`, `unit` | `10px`  | A number with a unit. `value` is a **string** (e.g. `"10"`), `unit` is a string. |
+| `Percentage`  | `value` | `50%`         | A number followed by `%`. `value` is a **string** (e.g. `"50"`). |
 | `Colon`       | --      | `:`           | |
 | `Semicolon`   | --      | `;`           | |
 | `Comma`       | --      | `,`           | |
 | `OpenBrace`   | --      | `{`           | |
 | `CloseBrace`  | --      | `}`           | |
-| `OpenParen`   | --      | `(`           | |
-| `CloseParen`  | --      | `)`           | |
+| `Star`        | --      | `*`           | The universal selector |
 
 Whitespace and CSS comments are **not** emitted as tokens -- they are consumed silently.
+
+> **Note:** Parentheses (`(`, `)`) are **not** tokenized. Functions like `rgb()`, `calc()`, and `url()` are out of scope for Phase 3.
 
 **Example:**
 
@@ -228,11 +229,11 @@ Output:
   { "type": "Semicolon" },
   { "type": "Ident", "value": "font-size" },
   { "type": "Colon" },
-  { "type": "Dimension", "value": 16, "unit": "px" },
+  { "type": "Dimension", "value": "16", "unit": "px" },
   { "type": "Semicolon" },
   { "type": "Ident", "value": "width" },
   { "type": "Colon" },
-  { "type": "Percentage", "value": 50 },
+  { "type": "Percentage", "value": "50" },
   { "type": "Semicolon" },
   { "type": "CloseBrace" }
 ]
@@ -423,7 +424,7 @@ Output (simplified -- only the body subtree shown for clarity):
 
 1. Only include properties that are explicitly set by a matching rule. Do not include defaults.
 2. When multiple rules match the same element and set the same property, the last rule in source order wins (no specificity calculation required for the base implementation).
-3. `<style>` elements themselves and `<head>` elements are included in the tree structure but have empty styles and no rendered children.
+3. The full document structure is included. `<head>` elements appear in the tree and include their children. `<style>` elements appear in the tree but with `children: []` (their CSS text content is not included as text nodes). Whitespace-only text nodes are excluded from the styled tree.
 
 ---
 

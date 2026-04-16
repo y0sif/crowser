@@ -44,7 +44,7 @@ A `#` followed by an identifier. Used for ID selectors and hex colors.
 { "type": "Hash", "value": "header" }
 ```
 
-- `value` — the text after the `#`, **without** the `#` prefix. Lowercased.
+- `value` — the text after the `#`, **without** the `#` prefix. Original case is **preserved** (not lowercased). Hash tokens are used for both ID selectors and hex colors (e.g. `#FF0000`), and lowercasing would corrupt hex color values.
 
 ### Dot
 
@@ -146,7 +146,7 @@ The `*` character, used as the universal selector.
 ## Rules
 
 1. **Whitespace is skipped.** Spaces, tabs, and newlines between tokens are consumed but do not produce tokens.
-2. **Identifiers are lowercased.** This includes tag names, property names, keyword values, unit names, and hash values.
+2. **Identifiers are lowercased.** This includes tag names, property names, keyword values, and unit names. Hash values are **not** lowercased (they preserve original case to support hex colors like `#FF0000`).
 3. **Numbers vs Dimensions vs Percentages.** When a number is immediately followed (no whitespace) by an identifier, it is a Dimension. When followed by `%`, it is a Percentage. Otherwise it is a Number.
 4. **Hash tokens.** `#` followed by alphanumeric characters or hyphens produces a Hash token. The `#` is consumed but not included in the value.
 5. **Dot tokens.** A `.` character produces a Dot token. The class name that follows will be a separate Ident token.
@@ -169,4 +169,5 @@ The following are **not** handled in this phase:
 ## Exit Codes
 
 - `0` — success, JSON printed to stdout
-- `1` — file not found or read error (print error message to stderr)
+- `1` — parse error (malformed input beyond recovery), error message printed to stderr
+- `2` — file not found, print `Error: file not found: <path>` to stderr

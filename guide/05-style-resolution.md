@@ -372,6 +372,11 @@ elements.
 with their default property values, but their text children (the CSS source
 code) are excluded. The `children` array of a `<style>` node is empty.
 
+**Whitespace-only text nodes are excluded.** Text nodes that contain only
+spaces, tabs, or newlines are dropped from the styled tree entirely. Only text
+nodes with non-whitespace content appear in the output. This keeps the tree
+clean and matches the test fixtures.
+
 **Text nodes carry no styles.** Text nodes in the styled tree have an empty
 `styles` object. They do not participate in selector matching or inheritance.
 (In later phases, text nodes will implicitly use their parent's resolved styles

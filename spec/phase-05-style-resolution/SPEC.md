@@ -53,17 +53,17 @@ A single JSON object representing the root of the styled tree, printed to stdout
 
 Text nodes always have `styles: {}` (empty object) and `children: []`.
 
+### Whitespace-Only Text Nodes
+
+Whitespace-only text nodes (nodes containing only spaces, tabs, or newlines) are **excluded** from the styled tree. Only text nodes with non-whitespace content are included.
+
 ### Comment Nodes
 
 Comment nodes are **excluded** from the styled tree. They are dropped during style resolution.
 
 ### Style and Head Elements
 
-`<style>` elements are **excluded** from the styled tree. `<head>` elements and their children are **excluded** from the styled tree. Only the `<body>` subtree (or the full tree if there is no `<body>`) is included in the output.
-
-Wait -- to keep things simple and consistent with Phase 2, the full document tree is output. However, `<style>` elements produce no styled children (their text content is CSS, not renderable text). The `<style>` element itself appears in the tree with empty `styles` and `children: []`.
-
-**Correction:** The styled tree includes the full document structure. `<style>` elements appear with `styles` set to their resolved defaults and `children: []` (their CSS text content is not included as text nodes). `<head>` elements appear with resolved defaults and include their children (minus style text content).
+The styled tree includes the **full document structure**. `<head>` elements appear in the tree with their resolved default styles and include their children. `<style>` elements appear in the tree with their resolved default styles, but their `children` array is always empty -- the CSS text content inside `<style>` elements is not included as text nodes (it is CSS source, not renderable text).
 
 ## Supported CSS Properties
 
