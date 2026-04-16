@@ -14,10 +14,10 @@
 .DS_Store
 Thumbs.db
 
-# User implementation (lives on their own branch, not main)
-/src/
-Cargo.toml
-Cargo.lock
+# User implementation (uncomment these on main branch)
+# /src/
+# Cargo.toml
+# Cargo.lock
 
 # Test output
 *.png
