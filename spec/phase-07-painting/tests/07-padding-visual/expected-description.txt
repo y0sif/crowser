@@ -1,0 +1,1 @@
+A blue rectangle that is 240x90 pixels (200 content + 20 padding on each side horizontally, 50 content + 20 padding on each side vertically). Inside it, a 200x50 white rectangle centered within the blue area, offset 20px from each edge. The blue padding area is visible as a 20px border of blue around the white inner rectangle. The rest of the canvas is white.

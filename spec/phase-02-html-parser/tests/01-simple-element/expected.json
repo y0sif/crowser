@@ -1,0 +1,8 @@
+{
+  "type": "Element",
+  "tag": "p",
+  "attributes": {},
+  "children": [
+    { "type": "Text", "content": "hello" }
+  ]
+}

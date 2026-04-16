@@ -1,0 +1,29 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": {},
+  "children": [
+    {
+      "type": "Element",
+      "tag": "section",
+      "attributes": {},
+      "children": [
+        {
+          "type": "Element",
+          "tag": "article",
+          "attributes": {},
+          "children": [
+            {
+              "type": "Element",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                { "type": "Text", "content": "deep" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

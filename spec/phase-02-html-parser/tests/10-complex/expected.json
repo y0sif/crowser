@@ -1,0 +1,86 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": { "class": "page" },
+  "children": [
+    { "type": "Comment", "content": " navigation " },
+    {
+      "type": "Element",
+      "tag": "nav",
+      "attributes": {},
+      "children": [
+        {
+          "type": "Element",
+          "tag": "a",
+          "attributes": { "href": "/" },
+          "children": [
+            { "type": "Text", "content": "home" }
+          ]
+        },
+        {
+          "type": "Element",
+          "tag": "a",
+          "attributes": { "href": "/about" },
+          "children": [
+            { "type": "Text", "content": "about" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Element",
+      "tag": "main",
+      "attributes": {},
+      "children": [
+        {
+          "type": "Element",
+          "tag": "h1",
+          "attributes": { "id": "title" },
+          "children": [
+            { "type": "Text", "content": "Welcome" }
+          ]
+        },
+        {
+          "type": "Element",
+          "tag": "p",
+          "attributes": {},
+          "children": [
+            { "type": "Text", "content": "This is " },
+            {
+              "type": "Element",
+              "tag": "strong",
+              "attributes": {},
+              "children": [
+                { "type": "Text", "content": "important" }
+              ]
+            },
+            { "type": "Text", "content": " text." }
+          ]
+        },
+        {
+          "type": "Element",
+          "tag": "br",
+          "attributes": {},
+          "children": []
+        },
+        {
+          "type": "Element",
+          "tag": "p",
+          "attributes": { "class": "note" },
+          "children": [
+            { "type": "Text", "content": "A note with a " },
+            {
+              "type": "Element",
+              "tag": "em",
+              "attributes": {},
+              "children": [
+                { "type": "Text", "content": "nested" }
+              ]
+            },
+            { "type": "Text", "content": " element." }
+          ]
+        }
+      ]
+    }
+  ]
+}

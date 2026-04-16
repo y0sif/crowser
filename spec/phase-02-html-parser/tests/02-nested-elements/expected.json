@@ -1,0 +1,15 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": {},
+  "children": [
+    {
+      "type": "Element",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "hello" }
+      ]
+    }
+  ]
+}

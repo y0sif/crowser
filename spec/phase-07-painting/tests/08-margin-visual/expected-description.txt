@@ -1,0 +1,1 @@
+Two 200x60 pixel gray rectangles. The first box is offset 20px from the top and 20px from the left (margin). The second box is below the first, with a 40px vertical gap between them (20px margin-bottom of the first box + 20px margin-top of the second box, since margins do not collapse in this engine). Both boxes are offset 20px from the left edge. The rest of the canvas is white.

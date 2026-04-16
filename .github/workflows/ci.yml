@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JSON validity
+        run: |
+          echo "Checking all expected.json files..."
+          failed=0
+          while IFS= read -r f; do
+            if ! jq empty "$f" 2>/dev/null; then
+              echo "INVALID: $f"
+              failed=1
+            fi
+          done < <(find spec/ -name "expected.json" -type f)
+
+          if [ "$failed" -eq 0 ]; then
+            echo "All JSON files are valid."
+          else
+            echo "Some JSON files are invalid!"
+            exit 1
+          fi
+
+      - name: Check test fixture completeness
+        run: |
+          echo "Checking that each test has both input and expected output..."
+          failed=0
+          for dir in spec/phase-*/tests/*/; do
+            [ -d "$dir" ] || continue
+            has_input=false
+            has_expected=false
+
+            [ -f "${dir}input.html" ] || [ -f "${dir}input.css" ] && has_input=true
+            [ -f "${dir}expected.json" ] || [ -f "${dir}expected-description.txt" ] && has_expected=true
+
+            if [ "$has_input" = false ]; then
+              echo "MISSING INPUT: $dir"
+              failed=1
+            fi
+            if [ "$has_expected" = false ]; then
+              echo "MISSING EXPECTED: $dir"
+              failed=1
+            fi
+          done
+
+          if [ "$failed" -eq 0 ]; then
+            echo "All test fixtures are complete."
+          else
+            echo "Some test fixtures are incomplete!"
+            exit 1
+          fi
+
+      - name: Check markdown links
+        run: |
+          echo "Checking for broken internal links..."
+          failed=0
+          while IFS= read -r f; do
+            while IFS= read -r link; do
+              target=$(echo "$link" | sed 's/.*](//' | sed 's/).*//' | sed 's/#.*//')
+              [ -z "$target" ] && continue
+              echo "$target" | grep -q "^http" && continue
+              dir=$(dirname "$f")
+              resolved="$dir/$target"
+              if [ ! -f "$resolved" ] && [ ! -d "$resolved" ]; then
+                echo "BROKEN LINK in $f: $target"
+                failed=1
+              fi
+            done < <(grep -oE '\[([^]]*)\]\(([^)]*)\)' "$f" || true)
+          done < <(find . -name "*.md" -type f -not -path "./.git/*")
+
+          if [ "$failed" -eq 0 ]; then
+            echo "All internal links are valid."
+          else
+            echo "Some internal links are broken!"
+            exit 1
+          fi

@@ -1,0 +1,8 @@
+[
+  { "type": "StartTag", "name": "h1", "attributes": {} },
+  { "type": "Text", "content": "title" },
+  { "type": "EndTag", "name": "h1" },
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "paragraph" },
+  { "type": "EndTag", "name": "p" }
+]

@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": null, "id": null, "classes": ["card", "featured"] }
+      ],
+      "declarations": [
+        { "property": "border", "value": "2px" }
+      ]
+    }
+  ]
+}

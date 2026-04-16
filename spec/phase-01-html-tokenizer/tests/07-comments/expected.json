@@ -1,0 +1,8 @@
+[
+  { "type": "StartTag", "name": "div", "attributes": {} },
+  { "type": "Comment", "content": " a comment " },
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "text" },
+  { "type": "EndTag", "name": "p" },
+  { "type": "EndTag", "name": "div" }
+]

@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": null, "id": "title", "classes": [] }
+      ],
+      "declarations": [
+        { "property": "font-size", "value": "32px" }
+      ]
+    }
+  ]
+}

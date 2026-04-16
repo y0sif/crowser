@@ -1,0 +1,5 @@
+[
+  { "type": "StartTag", "name": "a", "attributes": { "href": "https://example.com", "class": "link" } },
+  { "type": "Text", "content": "click" },
+  { "type": "EndTag", "name": "a" }
+]

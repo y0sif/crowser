@@ -1,0 +1,1 @@
+The text "Hello World" rendered in black, 16px monospace font, near the top-left corner of the canvas. The text baseline starts at approximately (0, 0). The canvas background is white. No other visual elements are present.

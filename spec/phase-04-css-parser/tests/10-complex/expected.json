@@ -1,0 +1,71 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "*", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "margin", "value": "0px" },
+        { "property": "padding", "value": "0px" },
+        { "property": "box-sizing", "value": "border-box" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "body", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "font-size", "value": "16px" },
+        { "property": "color", "value": "black" },
+        { "property": "background-color", "value": "white" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "h1", "id": null, "classes": [] },
+        { "tag": "h2", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "font-weight", "value": "bold" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": null, "id": "header", "classes": [] }
+      ],
+      "declarations": [
+        { "property": "height", "value": "60px" },
+        { "property": "background-color", "value": "blue" },
+        { "property": "color", "value": "white" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": null, "id": null, "classes": ["container"] }
+      ],
+      "declarations": [
+        { "property": "max-width", "value": "960px" },
+        { "property": "margin", "value": "auto" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "nav", "id": null, "classes": ["main-nav"] }
+      ],
+      "declarations": [
+        { "property": "display", "value": "flex" },
+        { "property": "padding", "value": "10px" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "p", "id": null, "classes": ["intro", "highlight"] }
+      ],
+      "declarations": [
+        { "property": "font-size", "value": "20px" },
+        { "property": "color", "value": "green" },
+        { "property": "line-height", "value": "1.6" }
+      ]
+    }
+  ]
+}

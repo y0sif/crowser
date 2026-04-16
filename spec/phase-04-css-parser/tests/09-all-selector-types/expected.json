@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "div", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "display", "value": "block" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": null, "id": null, "classes": ["wrapper"] }
+      ],
+      "declarations": [
+        { "property": "width", "value": "100%" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": null, "id": "app", "classes": [] }
+      ],
+      "declarations": [
+        { "property": "min-height", "value": "100vh" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "section", "id": null, "classes": ["content"] }
+      ],
+      "declarations": [
+        { "property": "padding", "value": "20px" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "*", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "margin", "value": "0px" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "Element",
+  "tag": "p",
+  "attributes": {},
+  "children": [
+    { "type": "Text", "content": "hello " },
+    {
+      "type": "Element",
+      "tag": "strong",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "world" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  { "type": "Star" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "margin" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "0", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "Ident", "value": "padding" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "0", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

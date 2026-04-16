@@ -1,0 +1,10 @@
+# Mark JSON test fixtures as generated
+spec/**/expected.json linguist-generated=true
+spec/**/expected-description.txt linguist-generated=true
+
+# Ensure consistent line endings for test fixtures
+*.html text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf

@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": null, "id": null, "classes": ["main"] }
+      ],
+      "declarations": [
+        { "property": "background-color", "value": "white" }
+      ]
+    }
+  ]
+}

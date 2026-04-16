@@ -1,0 +1,16 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": {},
+  "children": [
+    { "type": "Comment", "content": " header " },
+    {
+      "type": "Element",
+      "tag": "h1",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "title" }
+      ]
+    }
+  ]
+}

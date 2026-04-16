@@ -1,0 +1,44 @@
+{
+  "type": "Block",
+  "tag": "body",
+  "box": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 800.0,
+    "height": 90.0
+  },
+  "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "margin": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "children": [
+    {
+      "type": "Block",
+      "tag": "div",
+      "box": {
+        "x": 20.0,
+        "y": 20.0,
+        "width": 760.0,
+        "height": 50.0
+      },
+      "padding": { "top": 20.0, "right": 20.0, "bottom": 20.0, "left": 20.0 },
+      "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+      "margin": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+      "children": [
+        {
+          "type": "Block",
+          "tag": "div",
+          "box": {
+            "x": 20.0,
+            "y": 20.0,
+            "width": 100.0,
+            "height": 50.0
+          },
+          "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "margin": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

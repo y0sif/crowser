@@ -1,0 +1,5 @@
+div { display: block; }
+.wrapper { width: 100%; }
+#app { min-height: 100vh; }
+section.content { padding: 20px; }
+* { margin: 0px; }

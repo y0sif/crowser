@@ -1,0 +1,10 @@
+A centered-looking container (offset 20px from edges due to margin) with a light gray (#EEEEEE) background, 15px padding, and a 3px dark gray (#333333) border. Inside:
+
+1. A blue title bar with white text "Dashboard" in 24px font, with 5px padding and 10px bottom margin.
+
+2. Three card-like rectangles stacked vertically with 5px vertical margin between them. Each card is white with a 1px gray border, 10px padding, and contains black text:
+   - "First item content" on a white background
+   - "Second item highlighted" on a yellow background (the .highlight class adds yellow background)
+   - "Third item content" on a white background
+
+The overall container has a visible dark gray border. The light gray background shows through the padding area around the cards. The rest of the canvas outside the container is white.

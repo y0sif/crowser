@@ -1,0 +1,279 @@
+{
+  "node": {
+    "type": "Element",
+    "tag": "html",
+    "attributes": {}
+  },
+  "styles": {
+    "display": "block",
+    "color": "black",
+    "background-color": "transparent",
+    "width": "auto",
+    "height": "auto",
+    "margin-top": "0px",
+    "margin-right": "0px",
+    "margin-bottom": "0px",
+    "margin-left": "0px",
+    "padding-top": "0px",
+    "padding-right": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "border-width": "0px",
+    "border-color": "black",
+    "font-size": "16px"
+  },
+  "children": [
+    {
+      "node": {
+        "type": "Element",
+        "tag": "head",
+        "attributes": {}
+      },
+      "styles": {
+        "display": "block",
+        "color": "black",
+        "background-color": "transparent",
+        "width": "auto",
+        "height": "auto",
+        "margin-top": "0px",
+        "margin-right": "0px",
+        "margin-bottom": "0px",
+        "margin-left": "0px",
+        "padding-top": "0px",
+        "padding-right": "0px",
+        "padding-bottom": "0px",
+        "padding-left": "0px",
+        "border-width": "0px",
+        "border-color": "black",
+        "font-size": "16px"
+      },
+      "children": [
+        {
+          "node": {
+            "type": "Element",
+            "tag": "style",
+            "attributes": {}
+          },
+          "styles": {
+            "display": "block",
+            "color": "black",
+            "background-color": "transparent",
+            "width": "auto",
+            "height": "auto",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-width": "0px",
+            "border-color": "black",
+            "font-size": "16px"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "node": {
+        "type": "Element",
+        "tag": "body",
+        "attributes": {}
+      },
+      "styles": {
+        "display": "block",
+        "color": "#333333",
+        "background-color": "transparent",
+        "width": "auto",
+        "height": "auto",
+        "margin-top": "0px",
+        "margin-right": "0px",
+        "margin-bottom": "0px",
+        "margin-left": "0px",
+        "padding-top": "0px",
+        "padding-right": "0px",
+        "padding-bottom": "0px",
+        "padding-left": "0px",
+        "border-width": "0px",
+        "border-color": "black",
+        "font-size": "18px"
+      },
+      "children": [
+        {
+          "node": {
+            "type": "Element",
+            "tag": "div",
+            "attributes": {
+              "class": "container",
+              "id": "main"
+            }
+          },
+          "styles": {
+            "display": "block",
+            "color": "#333333",
+            "background-color": "#F0F0F0",
+            "width": "600px",
+            "height": "auto",
+            "margin-top": "0px",
+            "margin-right": "0px",
+            "margin-bottom": "0px",
+            "margin-left": "0px",
+            "padding-top": "20px",
+            "padding-right": "20px",
+            "padding-bottom": "20px",
+            "padding-left": "20px",
+            "border-width": "2px",
+            "border-color": "gray",
+            "font-size": "18px"
+          },
+          "children": [
+            {
+              "node": {
+                "type": "Element",
+                "tag": "h1",
+                "attributes": {}
+              },
+              "styles": {
+                "display": "block",
+                "color": "#333333",
+                "background-color": "transparent",
+                "width": "auto",
+                "height": "auto",
+                "margin-top": "10px",
+                "margin-right": "0px",
+                "margin-bottom": "10px",
+                "margin-left": "0px",
+                "padding-top": "0px",
+                "padding-right": "0px",
+                "padding-bottom": "0px",
+                "padding-left": "0px",
+                "border-width": "0px",
+                "border-color": "black",
+                "font-size": "32px"
+              },
+              "children": [
+                {
+                  "node": {
+                    "type": "Text",
+                    "content": "Title"
+                  },
+                  "styles": {},
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node": {
+                "type": "Element",
+                "tag": "p",
+                "attributes": {}
+              },
+              "styles": {
+                "display": "block",
+                "color": "blue",
+                "background-color": "transparent",
+                "width": "auto",
+                "height": "auto",
+                "margin-top": "0px",
+                "margin-right": "0px",
+                "margin-bottom": "0px",
+                "margin-left": "0px",
+                "padding-top": "0px",
+                "padding-right": "0px",
+                "padding-bottom": "0px",
+                "padding-left": "0px",
+                "border-width": "0px",
+                "border-color": "black",
+                "font-size": "18px"
+              },
+              "children": [
+                {
+                  "node": {
+                    "type": "Text",
+                    "content": "Normal paragraph"
+                  },
+                  "styles": {},
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node": {
+                "type": "Element",
+                "tag": "p",
+                "attributes": {
+                  "class": "highlight"
+                }
+              },
+              "styles": {
+                "display": "block",
+                "color": "red",
+                "background-color": "yellow",
+                "width": "auto",
+                "height": "auto",
+                "margin-top": "0px",
+                "margin-right": "0px",
+                "margin-bottom": "0px",
+                "margin-left": "0px",
+                "padding-top": "0px",
+                "padding-right": "0px",
+                "padding-bottom": "0px",
+                "padding-left": "0px",
+                "border-width": "0px",
+                "border-color": "black",
+                "font-size": "18px"
+              },
+              "children": [
+                {
+                  "node": {
+                    "type": "Text",
+                    "content": "Highlighted "
+                  },
+                  "styles": {},
+                  "children": []
+                },
+                {
+                  "node": {
+                    "type": "Element",
+                    "tag": "span",
+                    "attributes": {}
+                  },
+                  "styles": {
+                    "display": "inline",
+                    "color": "red",
+                    "background-color": "transparent",
+                    "width": "auto",
+                    "height": "auto",
+                    "margin-top": "0px",
+                    "margin-right": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "padding-top": "0px",
+                    "padding-right": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "border-width": "0px",
+                    "border-color": "black",
+                    "font-size": "14px"
+                  },
+                  "children": [
+                    {
+                      "node": {
+                        "type": "Text",
+                        "content": "small text"
+                      },
+                      "styles": {},
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

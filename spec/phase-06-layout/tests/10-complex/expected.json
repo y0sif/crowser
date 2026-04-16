@@ -1,0 +1,87 @@
+{
+  "type": "Block",
+  "tag": "body",
+  "box": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 800.0,
+    "height": 224.0
+  },
+  "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "margin": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+  "children": [
+    {
+      "type": "Block",
+      "tag": "div",
+      "box": {
+        "x": 32.0,
+        "y": 32.0,
+        "width": 600.0,
+        "height": 160.0
+      },
+      "padding": { "top": 20.0, "right": 20.0, "bottom": 20.0, "left": 20.0 },
+      "border": { "top": 2.0, "right": 2.0, "bottom": 2.0, "left": 2.0 },
+      "margin": { "top": 10.0, "right": 10.0, "bottom": 10.0, "left": 10.0 },
+      "children": [
+        {
+          "type": "Block",
+          "tag": "div",
+          "box": {
+            "x": 32.0,
+            "y": 37.0,
+            "width": 600.0,
+            "height": 50.0
+          },
+          "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "margin": { "top": 5.0, "right": 0.0, "bottom": 5.0, "left": 0.0 },
+          "children": []
+        },
+        {
+          "type": "Block",
+          "tag": "div",
+          "box": {
+            "x": 42.0,
+            "y": 102.0,
+            "width": 580.0,
+            "height": 80.0
+          },
+          "padding": { "top": 10.0, "right": 10.0, "bottom": 10.0, "left": 10.0 },
+          "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "margin": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+          "children": [
+            {
+              "type": "Block",
+              "tag": "div",
+              "box": {
+                "x": 47.0,
+                "y": 107.0,
+                "width": 200.0,
+                "height": 30.0
+              },
+              "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+              "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+              "margin": { "top": 5.0, "right": 5.0, "bottom": 5.0, "left": 5.0 },
+              "children": []
+            },
+            {
+              "type": "Block",
+              "tag": "div",
+              "box": {
+                "x": 47.0,
+                "y": 147.0,
+                "width": 200.0,
+                "height": 30.0
+              },
+              "padding": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+              "border": { "top": 0.0, "right": 0.0, "bottom": 0.0, "left": 0.0 },
+              "margin": { "top": 5.0, "right": 5.0, "bottom": 5.0, "left": 5.0 },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

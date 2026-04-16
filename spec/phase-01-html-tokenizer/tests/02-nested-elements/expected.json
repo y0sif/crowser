@@ -1,0 +1,7 @@
+[
+  { "type": "StartTag", "name": "div", "attributes": {} },
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "hello" },
+  { "type": "EndTag", "name": "p" },
+  { "type": "EndTag", "name": "div" }
+]

@@ -1,0 +1,11 @@
+[
+  { "type": "StartTag", "name": "div", "attributes": {} },
+  { "type": "StartTag", "name": "section", "attributes": {} },
+  { "type": "StartTag", "name": "article", "attributes": {} },
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "deep" },
+  { "type": "EndTag", "name": "p" },
+  { "type": "EndTag", "name": "article" },
+  { "type": "EndTag", "name": "section" },
+  { "type": "EndTag", "name": "div" }
+]

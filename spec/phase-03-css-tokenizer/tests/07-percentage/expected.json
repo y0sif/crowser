@@ -1,0 +1,9 @@
+[
+  { "type": "Ident", "value": "div" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "width" },
+  { "type": "Colon" },
+  { "type": "Percentage", "value": "50" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

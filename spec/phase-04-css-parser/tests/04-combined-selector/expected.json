@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "div", "id": null, "classes": ["container"] }
+      ],
+      "declarations": [
+        { "property": "padding", "value": "10px" },
+        { "property": "margin", "value": "20px" }
+      ]
+    }
+  ]
+}

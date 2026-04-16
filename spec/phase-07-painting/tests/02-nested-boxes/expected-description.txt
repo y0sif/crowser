@@ -1,0 +1,1 @@
+A 400x200 pixel blue rectangle in the top-left corner. Inside it, a 200x100 pixel green rectangle in the top-left corner of the blue rectangle. The green rectangle overlaps (is painted on top of) the blue rectangle. The remaining area of the blue rectangle (right half and bottom half) is visible as blue. The rest of the canvas is white.

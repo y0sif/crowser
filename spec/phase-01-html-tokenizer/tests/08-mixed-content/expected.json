@@ -1,0 +1,9 @@
+[
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "hello " },
+  { "type": "StartTag", "name": "strong", "attributes": {} },
+  { "type": "Text", "content": "world" },
+  { "type": "EndTag", "name": "strong" },
+  { "type": "Text", "content": " foo" },
+  { "type": "EndTag", "name": "p" }
+]

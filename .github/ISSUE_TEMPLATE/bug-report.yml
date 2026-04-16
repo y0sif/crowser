@@ -1,0 +1,60 @@
+name: Bug Report
+description: Report an issue with a spec, test fixture, guide content, or tooling
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: What part of the project is affected?
+      options:
+        - "Spec (phase definition or contract)"
+        - "Test Fixture (input/expected output)"
+        - "Guide (tutorial content)"
+        - "Hints (implementation suggestions)"
+        - "Test Runner (tools/test-runner.sh)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: Which phase is this related to?
+      options:
+        - "Phase 1: HTML Tokenizer"
+        - "Phase 2: HTML Parser"
+        - "Phase 3: CSS Tokenizer"
+        - "Phase 4: CSS Parser"
+        - "Phase 5: Style Resolution"
+        - "Phase 6: Layout"
+        - "Phase 7: Painting"
+        - "Phase 8: The Window"
+        - "General / Multiple Phases"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's wrong? Be specific.
+      placeholder: "The expected.json for test 03-attributes has the wrong attribute order..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other information (file paths, your implementation language, etc.)

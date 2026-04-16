@@ -1,0 +1,21 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": {},
+  "children": [
+    {
+      "type": "Element",
+      "tag": "br",
+      "attributes": {},
+      "children": []
+    },
+    {
+      "type": "Element",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "after break" }
+      ]
+    }
+  ]
+}

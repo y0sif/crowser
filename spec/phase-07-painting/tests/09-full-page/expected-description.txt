@@ -1,0 +1,9 @@
+A simple page layout with three horizontal bands spanning the full width (800px):
+
+1. Header: A dark gray (#333333) band at the top, 80px tall (60px height + 10px padding top + 10px padding bottom). White text "My Page" rendered in 24px font inside the header.
+
+2. Content: A light gray (#F0F0F0) band below the header, with 20px padding. Black text "Welcome to this simple page." rendered in 16px font inside the content area.
+
+3. Footer: A dark gray (#333333) band at the bottom of the content, 60px tall (40px height + 10px padding top + 10px padding bottom). White text "Footer text" rendered in 14px font inside the footer.
+
+The remaining canvas below the footer is white.

@@ -1,0 +1,16 @@
+[
+  { "type": "Ident", "value": "h1" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "font-size" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "24", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" },
+  { "type": "Ident", "value": "p" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "font-size" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "16", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

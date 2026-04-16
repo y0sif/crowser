@@ -1,0 +1,9 @@
+[
+  { "type": "Hash", "value": "header" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "height" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "50", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "h1", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "font-size", "value": "32px" },
+        { "property": "color", "value": "black" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": "p", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "font-size", "value": "16px" },
+        { "property": "line-height", "value": "1.5" }
+      ]
+    },
+    {
+      "selectors": [
+        { "tag": null, "id": null, "classes": ["highlight"] }
+      ],
+      "declarations": [
+        { "property": "background-color", "value": "yellow" }
+      ]
+    }
+  ]
+}

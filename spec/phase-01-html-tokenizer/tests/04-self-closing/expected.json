@@ -1,0 +1,4 @@
+[
+  { "type": "SelfClosingTag", "name": "br", "attributes": {} },
+  { "type": "SelfClosingTag", "name": "img", "attributes": { "src": "image.png" } }
+]

@@ -1,0 +1,9 @@
+[
+  { "type": "Ident", "value": "p" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "content" },
+  { "type": "Colon" },
+  { "type": "String", "value": "hello world" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

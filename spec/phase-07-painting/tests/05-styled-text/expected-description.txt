@@ -1,0 +1,1 @@
+A 300x30 pixel yellow rectangle in the top-left area. Inside it, the text "Styled Text" rendered in red, 16px monospace font. The yellow background is visible around and behind the text. The rest of the canvas is white.

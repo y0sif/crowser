@@ -1,0 +1,1 @@
+A rectangle with a 5px black border around it. The total area including border is 210x110 pixels (200+5+5 wide, 100+5+5 tall). The interior is white (matching the canvas). The black border is visible on all four sides. The rest of the canvas is white.

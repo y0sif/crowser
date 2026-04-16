@@ -1,0 +1,7 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+body { font-size: 16px; color: black; background-color: white; }
+h1, h2 { font-weight: bold; }
+#header { height: 60px; background-color: blue; color: white; }
+.container { max-width: 960px; margin: auto; }
+nav.main-nav { display: flex; padding: 10px; }
+p.intro.highlight { font-size: 20px; color: green; line-height: 1.6; }

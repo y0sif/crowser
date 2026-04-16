@@ -1,0 +1,23 @@
+{
+  "type": "Element",
+  "tag": "div",
+  "attributes": {},
+  "children": [
+    {
+      "type": "Element",
+      "tag": "h1",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "title" }
+      ]
+    },
+    {
+      "type": "Element",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "text" }
+      ]
+    }
+  ]
+}

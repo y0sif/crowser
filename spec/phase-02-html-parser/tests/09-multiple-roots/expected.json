@@ -1,0 +1,21 @@
+{
+  "type": "Document",
+  "children": [
+    {
+      "type": "Element",
+      "tag": "h1",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "one" }
+      ]
+    },
+    {
+      "type": "Element",
+      "tag": "p",
+      "attributes": {},
+      "children": [
+        { "type": "Text", "content": "two" }
+      ]
+    }
+  ]
+}

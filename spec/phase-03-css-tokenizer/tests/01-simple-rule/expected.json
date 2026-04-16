@@ -1,0 +1,9 @@
+[
+  { "type": "Ident", "value": "p" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "color" },
+  { "type": "Colon" },
+  { "type": "Ident", "value": "red" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

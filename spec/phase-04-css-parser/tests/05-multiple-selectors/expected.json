@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "h1", "id": null, "classes": [] },
+        { "tag": "h2", "id": null, "classes": [] },
+        { "tag": "h3", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "color", "value": "blue" }
+      ]
+    }
+  ]
+}

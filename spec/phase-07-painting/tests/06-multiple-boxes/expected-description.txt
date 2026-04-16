@@ -1,0 +1,1 @@
+Three 300x80 pixel rectangles stacked vertically with no gap between them, all left-aligned. From top to bottom: red (y=0 to y=80), green (y=80 to y=160), blue (y=160 to y=240). The rest of the canvas is white.

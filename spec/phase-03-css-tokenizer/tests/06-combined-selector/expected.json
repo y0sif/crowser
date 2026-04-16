@@ -1,0 +1,11 @@
+[
+  { "type": "Ident", "value": "div" },
+  { "type": "Dot" },
+  { "type": "Ident", "value": "container" },
+  { "type": "OpenBrace" },
+  { "type": "Ident", "value": "padding" },
+  { "type": "Colon" },
+  { "type": "Dimension", "value": "10", "unit": "px" },
+  { "type": "Semicolon" },
+  { "type": "CloseBrace" }
+]

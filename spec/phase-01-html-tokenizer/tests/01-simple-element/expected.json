@@ -1,0 +1,5 @@
+[
+  { "type": "StartTag", "name": "p", "attributes": {} },
+  { "type": "Text", "content": "hello" },
+  { "type": "EndTag", "name": "p" }
+]

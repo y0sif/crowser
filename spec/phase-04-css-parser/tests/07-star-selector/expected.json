@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {
+      "selectors": [
+        { "tag": "*", "id": null, "classes": [] }
+      ],
+      "declarations": [
+        { "property": "box-sizing", "value": "border-box" },
+        { "property": "margin", "value": "0px" }
+      ]
+    }
+  ]
+}
