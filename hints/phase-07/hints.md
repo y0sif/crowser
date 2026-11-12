@@ -45,7 +45,8 @@ The painting phase has three stages:
 
 ```rust
 /// Stage 1: Walk the layout tree and produce a flat list of draw commands.
-pub fn build_display_list(layout: &LayoutBox, styles: &StyledTree) -> Vec<DisplayCommand> { ... }
+/// The colors come from the styles stored on each layout box in Phase 6.
+pub fn build_display_list(layout: &LayoutBox) -> Vec<DisplayCommand> { ... }
 
 /// Stage 2: Execute draw commands onto a pixel buffer.
 pub fn render(commands: &[DisplayCommand], canvas: &mut Canvas) { ... }
@@ -205,7 +206,7 @@ If you want something between "no text" and "real font rendering," character-siz
 
 **Transparent means "do nothing."** When `background-color` is `"transparent"`, skip the fill entirely. Do not paint transparent black pixels over the existing canvas content.
 
-**Accessing styles from the layout tree.** The layout tree (Phase 6) does not carry the full styled node. You need the resolved styles to know colors and border-color. Either store relevant style properties in the layout box, or pass the styled tree alongside the layout tree and correlate them. The simplest approach: store the needed style values (`background-color`, `border-color`, `color`, `font-size`) directly in the layout box struct.
+**Accessing styles from the layout tree.** The layout tree (Phase 6) does not carry the full styled node. You need the resolved styles to know colors and border-color. Either store the resolved styles in the layout box, or pass the styled tree alongside the layout tree and correlate them. The simplest approach is the first one: the Phase 6 hints suggest a `styles` field on the layout box marked `#[serde(skip)]`, so the `layout` output stays unchanged. If you did not add it in Phase 6, add it now.
 
 **Pixel format.** Your canvas is RGBA (4 bytes per pixel). The `image` crate expects RGBA. If you later display in a window (Phase 8), the window library may expect a different format (e.g., `0x00RRGGBB` as `u32`). Keep the canvas in RGBA and convert at the display boundary.
 
