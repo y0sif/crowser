@@ -322,6 +322,12 @@ each text node as a single rectangle. This is fine for this phase.
 **Float precision.** Output all numbers with one decimal place. This keeps test
 comparisons predictable.
 
+**The painter will need styles too.** The layout JSON holds geometry only, but
+in Phase 7 the painter needs each box's `background-color`, `border-color`, and
+`color`. Keep the resolved styles on your layout box internally (a text box
+takes them from its parent element), and leave them out of the JSON output. The
+tests compare the whole object, so an extra field in the output makes them fail.
+
 ## What You'll Have
 
 After this phase, your engine can take an HTML file with embedded CSS and produce

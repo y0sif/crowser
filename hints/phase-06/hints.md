@@ -3,6 +3,7 @@
 ## Suggested Types
 
 ```rust
+use indexmap::IndexMap;
 use serde::Serialize;
 
 #[derive(Debug, Clone, Serialize)]
@@ -22,6 +23,8 @@ pub struct LayoutBox {
     pub margin: Option<Edges>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub children: Option<Vec<LayoutBox>>,
+    #[serde(skip)]
+    pub styles: IndexMap<String, String>,  // for the painter, never serialized
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -51,6 +54,8 @@ pub struct Edges {
 Note: the spec says the JSON field is `"box"`, not `"box_dims"`. Use `#[serde(rename = "box")]` on the field. Also, `"box"` is a reserved keyword in Rust, so you cannot name the field `box`. The rename attribute handles this.
 
 Text nodes have a different shape in the output: they have `content` and `box` but no `padding`, `border`, `margin`, or `children`. Using `Option` with `skip_serializing_if` handles this, but you might prefer separate structs or an enum with `#[serde(untagged)]` for cleaner code.
+
+The `styles` field is not part of the Phase 6 output. Layout itself does not need it, but the painter in Phase 7 reads `background-color`, `border-color`, and `color` from each box, so it is easiest to copy the resolved styles onto the box now. For a text node, copy the parent element's styles, since text nodes have none of their own. `#[serde(skip)]` keeps the field out of the JSON. This matters because the tests compare the whole object, and any extra key is a failure.
 
 ## Architecture
 
